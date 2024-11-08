@@ -1,0 +1,117 @@
+/* General styling for TaskList */
+.task-list-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list-title {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for task list */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-info span {
+    font-size: 1.1rem;
+  }
+  
+  .task-status {
+    font-weight: bold;
+    color: #ff9800;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-status-btn,
+  .task-delete-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-status-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .task-status-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .task-delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .task-delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .task-list-container {
+      padding: 15px;
+    }
+  
+    .task-list-title {
+      font-size: 1.5rem;
+    }
+  
+    .task-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .task-status-btn,
+    .task-delete-btn {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 12px;
+      margin-top: 8px;
+    }
+  
+    .task-info span {
+      font-size: 1rem;
+    }
+  
+    .task-status {
+      font-size: 1.1rem;
+      color: #ff9800;
+    }
+  }
+  
